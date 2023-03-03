@@ -5,6 +5,11 @@ import Store from "./components/Store";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
+  palette: {
+    primary: {
+      main: "#E55986",
+    },
+  },
   components: {
     MuiTypography: {
       styleOverrides: {

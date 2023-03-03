@@ -1,23 +1,19 @@
 import React from "react";
+import IconBar from "./IconBar";
+import ProductCards from "./ProductCards";
 
 export default function ProductList(props) {
-  const { setShowProductDetailAnimation } = props;
+  const { setShowProductDetailAnimation, showProductDetailAnimation } = props;
 
-  const handleProductClick = () => {
-    setShowProductDetailAnimation(true);
-  };
   return (
-    <div style={{ width: "100%", height: "2000px", backgroundColor: "red" }}>
-      <div
-        style={{
-          width: "100%",
-          height: "30px",
-          backgroundColor: "green",
-          position: "sticky",
-          top: "70px",
-        }}
-        onClick={handleProductClick}
-      ></div>
+    <div
+      style={{ width: "100%", backgroundColor: "#E2E4E8", paddingBottom: 100 }}
+    >
+      <IconBar />
+      <ProductCards
+        setShowProductDetailAnimation={setShowProductDetailAnimation}
+        showProductDetailAnimation={showProductDetailAnimation}
+      />
     </div>
   );
 }

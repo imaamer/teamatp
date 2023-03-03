@@ -5,7 +5,7 @@ import MainMenu from "./MainMenu";
 import ProductList from "./ProductList";
 
 export default function Home(props) {
-  const { setShowProductDetailAnimation } = props;
+  const { setShowProductDetailAnimation, showProductDetailAnimation } = props;
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
@@ -33,6 +33,7 @@ export default function Home(props) {
         <div style={{ width: "100%", height: "100vh" }}>
           <Banner />
           <ProductList
+            showProductDetailAnimation={showProductDetailAnimation}
             setShowProductDetailAnimation={setShowProductDetailAnimation}
           />
           <MainMenu />

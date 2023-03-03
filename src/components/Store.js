@@ -16,7 +16,10 @@ function Store(props) {
   return (
     <div>
       {!showProductDetails && (
-        <Home setShowProductDetailAnimation={setShowProductDetailAnimation} />
+        <Home
+          showProductDetailAnimation={showProductDetailAnimation}
+          setShowProductDetailAnimation={setShowProductDetailAnimation}
+        />
       )}
       {showProductDetailAnimation && (
         <motion.div
