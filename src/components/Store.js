@@ -9,6 +9,7 @@ function Store(props) {
     useState(false);
 
   const handleAnimationEnd = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     setShowProductDetailAnimation(false);
     setShowProductDetails(true);
   };

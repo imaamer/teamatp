@@ -23,7 +23,6 @@ export default function ProductCard(props) {
         height: "250px",
         cursor: "pointer",
       }}
-      onClick={handleProductClick}
     >
       <div
         style={{
@@ -37,6 +36,7 @@ export default function ProductCard(props) {
           alt=""
           src={productData.image}
           style={{ width: "100%", height: "200px", objectFit: "cover" }}
+          onClick={handleProductClick}
         />
         <IconButton
           onClick={handleFavourite}
@@ -55,6 +55,7 @@ export default function ProductCard(props) {
             position: "absolute",
             bottom: 0,
           }}
+          onClick={handleProductClick}
         >
           <Typography
             style={{
