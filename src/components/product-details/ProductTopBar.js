@@ -22,6 +22,8 @@ export default function ProductTopBar(props) {
         backgroundColor: "white",
         display: "flex",
         alignItems: "center",
+        zIndex: 2000,
+        boxShadow: "0px 1px 2px rgba(136, 136, 136, 0.3)",
       }}
     >
       <div style={{ flex: 1 }}>
